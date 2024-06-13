@@ -4,8 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="description" content="3D Visuo-Tactile">
-  <meta name="author"
-    content="">
+  <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>3D Visuo-Tactile</title>
 
@@ -42,7 +41,8 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-2 publication-title">3D ViTac: Learning Fine-Grained Manipulation <br> with Visuo-Tactile Sensing</h1>
+            <h1 class="title is-2 publication-title">3D ViTac: Learning Fine-Grained Manipulation <br> with
+              Visuo-Tactile Sensing</h1>
             <div class="is-size-5 publication-authors">
 
             </div>
@@ -53,357 +53,340 @@
   </section>
 
   <!-- <section class="additional comment"> -->
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-4">
+          Our Visuo-Tactile Policy can deal with fragile objects and precise in-hand manipulation! </h2>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-full-width">
+            <h3 class="title is-4"></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <section class="overall teaser">
+    <div class="container">
+      <div class="hero-body">
+        <video id="teaser_video" width=99% muted autoplay loop style="border-radius:10px; ">
+          <source src="video/egg_teaser.mp4" type="video/mp4">
+        </video>
+        </br>
+        </br>
+        <div class="columns is-centered has-text-centered">
+          <h2 class="title is-4">
+            Grasping and Handling Real Egg! </h2>
+          </div>
+      </div>
+
+    </div>
+
+    <!-- <div class="container">
+      <div class="hero-body">
+        <video id="teaser_video" width=49.5% muted autoplay loop style="border-radius:10px; ">
+          <source src="" type="video/mp4">
+        </video>
+        <video id="teaser_video" width=49.5% muted autoplay loop style="border-radius:10px; ">
+          <source src="" type="video/mp4">
+        </video>
+      </div>
+    </div> -->
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Tactile and visual perception are both crucial for humans to perform fine-grained interactions with their
+              environment. Developing similar multi-modal sensing capabilities for robots can significantly enhance and
+              expand their manipulation skills. This paper introduces <b>3D-ViTac</b>, a multi-modal sensing and
+              learning system designed for dexterous bimanual manipulation. Our system features tactile sensors equipped
+              with dense sensing units, each covering an area of 3 mm^2. These sensors are low-cost and flexible,
+              providing detailed and extensive coverage of physical contacts, effectively complementing visual
+              information.
+              To integrate tactile and visual data, we fuse them into a unified 3D representation space that preserves
+              their 3D structures and spatial relationships. The multi-modal representation can then be coupled with
+              diffusion policies for imitation learning. Through concrete hardware experiments, we demonstrate that even
+              low-cost robots can perform precise manipulations and significantly outperform vision-only policies,
+              particularly in safe interactions with fragile items and executing long-horizon tasks involving in-hand
+              manipulation.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="videos">
     <div class="container">
       <div class="columns is-centered has-text-centered">
         <div class="column is-full-width">
-          <h2 class="title is-4">
-            3D Visuo-Tactile</h2>
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-full-width">
-              <h3 class="title is-4"></h3>
+          <h2 class="title is-3">Policy Rollout and Visuo-Tactile Representation</h2>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-4">Tasks Requiring Fine-Grained Force Information</h2>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <!-- <h2 class="title is-5"> Moving Objects </h2> -->
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="video/egg merge demo2.mp4" type="video/mp4" />
+              </video>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    </div>
 
-    <section class="overall teaser">
-      <div class="container">
-        <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="video/fruit merge.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-4">Tasks Requiring In-Hand State Information</h2>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <!-- <h2 class="title is-5"> Terrain </h2> -->
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="video/hex merge.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="video/serving merge.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Comparison with Baselines</h2>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-5"> xxxxxxx </h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="videos/ball2~1_small.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <h2 class="title is-5"> xxxxxxx</h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="videos/woboth_1_small.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-5"> xxxxxxx </h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="videos/triangle1~1_small.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <h2 class="title is-5"> xxxxxxx </h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="videos/openloop_4_small.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <br>
+      <br>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Failure Cases </h2>
+          </h2>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-5"> xxxxxxx </h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="videos/bad_throw~1_small.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <h2 class="title is-5"> xxxxxxx </h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="videos/badcatchmotion~1_small.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-5"> xxxxxxx </h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="videos/bad_catcher~1_small.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <h2 class="title is-5"> xxxxxxx </h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="videos/bad_GE~1_small.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">xxxxxxx Test </h2>
+          </h2>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-5"> xxxxxxx</h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="videos/wind_pertub/vertical_infer.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <h2 class="title is-5"> xxxxxxx</h2>
+          <div class="columns is-centered">
+            <div class="column content">
+              <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
+                <source src="videos/wind_pertub/vertical_infer_demo1.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <br>
+  <br>
+  <section class="videos">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Visualization in xxxxxxx</h2>
+
+          <!-- <div class="hero-body"> -->
           <video id="teaser_video" width=99% muted autoplay loop style="border-radius:10px; ">
-            <source src="videos/teaser_small.mp4" type="video/mp4">
+            <source src="videos/sim9objects_small_ff.mp4" type="video/mp4">
           </video>
-        </div>
-      </div>
-      <div class="container">
-        <div class="hero-body">
-          <video id="teaser_video" width=49.5% muted autoplay loop style="border-radius:10px; ">
-            <source src="" type="video/mp4">
-          </video>
-          <video id="teaser_video" width=49.5% muted autoplay loop style="border-radius:10px; ">
-            <source src="" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </section>
 
-    <section class="section">
-      <div class="container">
-        <!-- Abstract. -->
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-full-width">
-            <h2 class="title is-3">Abstract</h2>
-            <div class="content has-text-justified">
-              <p>
-
-              </p>
-            </div>
-          </div>
         </div>
 
       </div>
-    </section>
+    </div>
 
 
-    <section class="videos">
-      <div class="container">
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-full-width">
-            <h2 class="title is-3">Visualization in the xxxx</h2>
-          </div>
-        </div>
+    </div>
 
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-full-width">
-            <h2 class="title is-4">Tests on xxxxx</h2>
-          </div>
-        </div>
-
-        <div class="columns is-centered has-text-centered">
-          <div class="column">
-            <!-- <h2 class="title is-5"> Moving Objects </h2> -->
-            <div class="columns is-centered">
-              <div class="column content">
-                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
-                  <source src="videos/ball~1_small.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
-                  <source src="videos/ball2~1_small.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="columns is-centered has-text-centered">
-          <div class="column">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
-                  <source src="videos/cld1~1_small.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
-                  <source src="videos/triangle1~1_small.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-full-width">
-            <h2 class="title is-4">Tests on xxxxxxx </h2>
-          </div>
-        </div>
-
-        <div class="columns is-centered has-text-centered">
-          <div class="column">
-            <!-- <h2 class="title is-5"> Terrain </h2> -->
-            <div class="columns is-centered">
-              <div class="column content">
-                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
-                  <source src="videos/lemon_1_small.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
-                  <source src="videos/pitch_1_small.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="columns is-centered has-text-centered">
-          <div class="column">
-            <div class="columns is-centered">
-              <div class="column content">
-                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
-                  <source src="videos/stra_1_small.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <!-- <h2 class="title is-5"> Terrain </h2> -->
-            <div class="columns is-centered">
-              <div class="column content">
-                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
-                  <source src="videos/turtle_1_small.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-        </div>
+  </section>
 
 
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-full-width">
-            <h2 class="title is-3">Comparison with Baselines</h2>
-          </div>
-        </div>
-
-        <div class="columns is-centered has-text-centered">
-          <div class="column">
-            <h2 class="title is-5"> xxxxxxx </h2>
-            <div class="columns is-centered">
-              <div class="column content">
-                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
-                  <source src="videos/ball2~1_small.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <h2 class="title is-5"> xxxxxxx</h2>
-            <div class="columns is-centered">
-              <div class="column content">
-                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
-                  <source src="videos/woboth_1_small.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="columns is-centered has-text-centered">
-          <div class="column">
-            <h2 class="title is-5"> xxxxxxx </h2>
-            <div class="columns is-centered">
-              <div class="column content">
-                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
-                  <source src="videos/triangle1~1_small.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <h2 class="title is-5"> xxxxxxx </h2>
-            <div class="columns is-centered">
-              <div class="column content">
-                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
-                  <source src="videos/openloop_4_small.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <br>
-        <br>
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-full-width">
-            <h2 class="title is-3">Failure Cases </h2></h2> 
-          </div>
-        </div>
-  
-        <div class="columns is-centered has-text-centered">
-          <div class="column">
-            <h2 class="title is-5"> xxxxxxx </h2>
-            <div class="columns is-centered">
-              <div class="column content">
-                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
-                  <source src="videos/bad_throw~1_small.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-  
-          <div class="column">
-            <h2 class="title is-5"> xxxxxxx </h2>
-            <div class="columns is-centered">
-              <div class="column content">
-                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
-                  <source src="videos/badcatchmotion~1_small.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="columns is-centered has-text-centered">
-          <div class="column">
-            <h2 class="title is-5"> xxxxxxx </h2>
-            <div class="columns is-centered">
-              <div class="column content">
-                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
-                  <source src="videos/bad_catcher~1_small.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-  
-          <div class="column">
-            <h2 class="title is-5"> xxxxxxx </h2>
-            <div class="columns is-centered">
-              <div class="column content">
-                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
-                  <source src="videos/bad_GE~1_small.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <br>
-        <br>
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-full-width">
-            <h2 class="title is-3">xxxxxxx Test </h2></h2> 
-          </div>
-        </div>
-  
-        <div class="columns is-centered has-text-centered">
-          <div class="column">
-            <h2 class="title is-5">  xxxxxxx</h2>
-            <div class="columns is-centered">
-              <div class="column content">
-                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
-                  <source src="videos/wind_pertub/vertical_infer.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-  
-          <div class="column">
-            <h2 class="title is-5"> xxxxxxx</h2>
-            <div class="columns is-centered">
-              <div class="column content">
-                <video playsinline="" autoplay="" loop="" preload="" muted="" width="100%" style="border-radius:10px; ">
-                  <source src="videos/wind_pertub/vertical_infer_demo1.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-          </div>
-
-        </div>
-  
-
-      </div>
-    </section>
-
-
-    <br>
-    <br>
-    <section class="videos">
-      <div class="container">
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-full-width">
-            <h2 class="title is-3">Visualization in xxxxxxx</h2>
-
-              <!-- <div class="hero-body"> -->
-            <video id="teaser_video" width=99% muted autoplay loop style="border-radius:10px; ">
-              <source src="videos/sim9objects_small_ff.mp4" type="video/mp4">
-            </video>
-
-          </div>
-
-          </div>
-        </div>
-
-
-      </div>
-
-    </section>
-
-
-    <footer class="footer">
-      <div class="container">
-        <div class="columns is-centered">
-          <div class="column is-8">
-            <div class="content">
-              <p>
-                This website template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Here</a>.
-              </p>
-            </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Here</a>.
+            </p>
           </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
 </body>
 
